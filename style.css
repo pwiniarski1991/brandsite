@@ -48,7 +48,124 @@ table {
 }
 
 /** My styles **/
+
+@keyframes bounce {
+    0% {
+        transform: translateX(4px);
+    }
+    25% {
+        transform: translateX(4px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-4px)
+    }
+    100% {
+        transform: translateX(-4px);
+    }
+}
 * {
     box-sizing: border-box;
 }
 
+html,body {
+    background-color: #ffeeee;
+    color: #001111;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.mainHeader,.mainContent,.mainFooter {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainHeader {
+    background-color: #272727;
+    color: #ffffff; 
+}
+
+.mainNav {
+    display: flex;
+    flex-basis: 75%;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteLogo {
+    display: flex;
+    flex-basis: 25%;
+    position: relative;
+}
+
+.siteLogo__link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.navMenu__item {
+    display: inline-flex;
+}
+
+.navMenu__item__link {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 20px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.siteLogo__link::before,.navMenu__item__link::before {
+    content: '<';
+    position: absolute;
+    left: 5px;
+    top: 12px;
+}
+
+.siteLogo__link::after,.navMenu__item__link::after {
+    content: '>';
+    position: absolute;
+    right: 5px;
+    top: 12px;
+}
+
+.siteLogo__link:hover::before,.navMenu__item__link:hover::before {
+    animation: bounce .8s infinite;
+}
+.siteLogo__link:hover::after,.navMenu__item__link:hover::after {
+    animation: bounce .8s infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+.content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.contentWrapper {
+    text-align: left;
+    margin: 20px 0;
+}

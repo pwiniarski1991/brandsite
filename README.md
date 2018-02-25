@@ -1,2 +1,2 @@
 # brandsite
-Peronsal Page
+Personal Page

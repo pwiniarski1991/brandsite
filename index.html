@@ -1,61 +1,68 @@
  <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>title</title>
-  <meta name="author" content="name">
-  <meta name="description" content="description here">
-  <meta name="keywords" content="keywords,here">
-  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
-  <link rel="stylesheet" href="style.css" type="text/css">
-  </head>
-  <body>
-      <header>
-          <div class="siteLogo">
-            <a href=""><pwiniarski></a>
-          </div>
-          <nav>
-              <div class="mobileNav">
-                  <span class="mobileNav__bar"></span>
-                  <span class="mobileNav__bar"></span>
-                  <span class="mobileNav__bar"></span>
-              </div>
-              <ul class="navi">
-                <li><a href="#aboutMe" title="">about me</a></li>
-                <li><a href="#mySkills" title="">my skills</a></li>
-                <li><a href="#portoflio" title="">portfolio</a></li>
-                <li><a href="#hireme" title="">Hire me</a></li>
-                <li><a href="#contact" title="">Contact</a></li>
-              </ul>
-          </nav>
-      </header>
-      <main role="main">
-          <section id="aboutMe" class="contentWrapper">
-              <h2>about me</h2>
-              <article></article>
-          </section>
-          <section id="mySkills" class="contentWrapper">
-              <h2>My skills</h2>
-              <article></article>
-          </section>
-            <section id="portfolio" class="contentWrapper">
-              <h2>My projects</h2>
-              <article></article>
-          </section>
-          <section id="hireMe" class="contentWrapper">
-              <h2>Hire me</h2>
-              <article></article>
-          </section>
-            <section id="contact" class="contentWrapper">
-              <h2>Contact</h2>
-              <article></article>
-          </section>
-      </main>
-      <footer>
-          <p>COPYRIGHT&2018 Piotr Winiarski</p>
-      </footer>
-  <script src="main.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Brand Site</title>
+        <meta name="author" content="name">
+        <meta name="description" content="description here">
+        <meta name="keywords" content="keywords,here">
+        <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header class="mainHeader">
+            <div class="wrapper">
+                <div class="siteLogo">
+                    <a class="siteLogo__link" href=""><h1>pwiniarski</h1></a>
+                </div>
+                <nav class="mainNav">
+                    <div class="mobileNav">
+                        <span class="mobileNav__bar"></span>
+                        <span class="mobileNav__bar"></span>
+                        <span class="mobileNav__bar"></span>
+                    </div>
+                    <ul class="navMenu">
+                        <li class="navMenu__item"><a class="navMenu__item__link" href="#aboutMe" title="">About me</a></li>
+                        <li class="navMenu__item"><a class="navMenu__item__link" href="#skills" title="">Skills</a></li>
+                        <li class="navMenu__item"><a class="navMenu__item__link" href="#portoflio" title="">Portfolio</a></li>
+                        <li class="navMenu__item"><a class="navMenu__item__link" href="#hireme" title="">Hire me</a></li>
+                        <li class="navMenu__item"><a class="navMenu__item__link" href="#contact" title="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main role="mainContent">
+            <div class="wrapper content">
+                <section id="aboutMe" class="contentWrapper">
+                    <h2>About me</h2>
+                    <article><p>My name is Piotr Winiarski and I am quite talented and expierienced Junior Front End Developer. I live in Szczecin and I am currently working on contract of employment as junior javaScript Developer.</p><img src="" alt=""></article>
+                </section>
+                <section id="skills" class="contentWrapper">
+                    <h2>My skills</h2>
+                    <article></article>
+                </section>
+                <section id="portfolio" class="contentWrapper">
+                    <h2>My projects</h2>
+                    <article></article>
+                </section>
+                <section id="hireMe" class="contentWrapper">
+                    <h2>Hire me</h2>
+                    <article></article>
+                </section>
+                <section id="contact" class="contentWrapper">
+                    <h2>Contact</h2>
+                    <article></article>
+                </section>
+            </div>
+        </main>
+        <footer class="mainFooter">
+            <div class="wrapper">
+                <p>COPYRIGHT&2018 Piotr Winiarski</p>
+            </div>
+        </footer>
+    <script src="main.js"></script>
   </body>
 </html>
