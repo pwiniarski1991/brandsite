@@ -15,52 +15,203 @@
     <body>
         <header class="mainHeader">
             <div class="wrapper">
-                <div class="siteLogo">
-                    <a class="siteLogo__link" href=""><h1>pwiniarski</h1></a>
+                <div class="mainHeader__logo">
+                    <a class="mainHeader__logo__link" href=""><h1>pwiniarski</h1></a>
                 </div>
-                <nav class="mainNav">
-                    <div class="mobileNav">
-                        <span class="mobileNav__bar"></span>
-                        <span class="mobileNav__bar"></span>
-                        <span class="mobileNav__bar"></span>
+                <nav class="mainHeader__nav">
+                    <div class="mainHeader__nav__mobile">
+                        <span class="mainHeader__nav__mobile__bar"></span>
+                        <span class="mainHeader__nav__mobile__bar"></span>
+                        <span class="mainHeader__nav__mobile__bar"></span>
                     </div>
-                    <ul class="navMenu">
-                        <li class="navMenu__item"><a class="navMenu__item__link" href="#aboutMe" title="">About me</a></li>
-                        <li class="navMenu__item"><a class="navMenu__item__link" href="#skills" title="">Skills</a></li>
-                        <li class="navMenu__item"><a class="navMenu__item__link" href="#portoflio" title="">Portfolio</a></li>
-                        <li class="navMenu__item"><a class="navMenu__item__link" href="#hireme" title="">Hire me</a></li>
-                        <li class="navMenu__item"><a class="navMenu__item__link" href="#contact" title="">Contact</a></li>
+                    <ul class="mainHeader__nav__menu">
+                        <li class="mainHeader__nav__menu__item"><a class="mainHeader__nav__menu__item__link" href="#aboutMe" title="">About me</a></li>
+                        <li class="mainHeader__nav__menu__item"><a class="mainHeader__nav__menu__item__link" href="#skills" title="">Skills</a></li>
+                        <li class="mainHeader__nav__menu__item"><a class="mainHeader__nav__menu__item__link" href="#portoflio" title="">Portfolio</a></li>
+                        <li class="mainHeader__nav__menu__item"><a class="mainHeader__nav__menu__item__link" href="#hireme" title="">Hire me</a></li>
+                        <li class="mainHeader__nav__menu__item"><a class="mainHeader__nav__menu__item__link" href="#contact" title="">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main role="mainContent">
-            <div class="wrapper content">
-                <section id="aboutMe" class="contentWrapper">
-                    <h2>About me</h2>
-                    <article><p>My name is Piotr Winiarski and I am quite talented and expierienced Junior Front End Developer. I live in Szczecin and I am currently working on contract of employment as junior javaScript Developer.</p><img src="" alt=""></article>
-                </section>
-                <section id="skills" class="contentWrapper">
-                    <h2>My skills</h2>
-                    <article></article>
-                </section>
-                <section id="portfolio" class="contentWrapper">
-                    <h2>My projects</h2>
-                    <article></article>
-                </section>
-                <section id="hireMe" class="contentWrapper">
-                    <h2>Hire me</h2>
-                    <article></article>
-                </section>
-                <section id="contact" class="contentWrapper">
-                    <h2>Contact</h2>
-                    <article></article>
-                </section>
-            </div>
+        <main class="mainContent" role="mainContent">
+            <section id="aboutMe" class="contentWrapper">
+                <div class="wrapper content">
+                    <header class="contentWrapper__heading">
+                        <h2 class="contentWrapper__heading__type2">My skills</h2>
+                    </header>
+                    <article class="contentWrapper__bio">
+                        <p class="contentWrapper__bio__desc">My name is Piotr Winiarski and I am quite talented and expierienced Junior Front End Developer. I live in Szczecin and I am currently working on contract of employment as junior javaScript Developer.</p>
+                        <div class="contentWrapper__bio__portrait"><img src="images/zdjecie.jpg" alt="Portrait"></div>
+                    </article>
+                </div>
+            </section>
+            <section id="skills" class="contentWrapper">
+                <div class="wrapper content">
+                    <header class="contentWrapper__heading">
+                        <h2 class="contentWrapper__heading__type2">My skills</h2>
+                    </header>
+                    <article class="contentWrapper__bio__columnOrdered">
+                        <h3 class="contentWrapper__heading3">Use of technologies with I am comfortable with:</h3>
+                        <ul class="contentWrapper__completeSkills">
+                            <li class="contentWrapper__completeSkills__item">
+                                <img class="contentWrapper__completeSkills__item__photo" src="images/html5.png" alt="HTML5" >
+                                <p class="contentWrapper__completeSkills__item__back">&lt;header&gt;&lt;h1&gt;HTML5&lt;/h1&gt;&lt;nav&gt;&lt;/nav&gt;&lt;/header&gt;&lt;main&gt;&lt;/main&gt;&lt;footer&gt;&lt;/footer&gt;
+                                </p>
+                            </li>
+                            <li class="contentWrapper__completeSkills__item">
+                                <img class="contentWrapper__completeSkills__item__photo" src="images/css3.png" alt="CSS3" >
+                                <p class="contentWrapper__completeSkills__item__back">.contentWrapper__completeSkills {
+                                    display: inline-flex;
+                                    transform-style: preserve-3d;
+                                    transition: transform 1s, opacity 1s;
+                                    position: relative;
+                                    width: 100px;
+                                    }
+                                </p>
+                            </li>
+                            <li class="contentWrapper__completeSkills__item">
+                                <img class="contentWrapper__completeSkills__item__photo" src="images/js.png" alt="js" >
+                                <p class="contentWrapper__completeSkills__item__back">
+                                    const elemsDOM = {
+                                        button: document.querySelector('.mainHeader__nav__mobile'),
+                                        menu: document.querySelector('.mainHeader__nav__menu')
+                                    }
+                                    document.addEventListener('DOMContentLoaded',function(){
+                                    elemsDOM.button.addEventListener('click',function(){
+                                        console.log('clicked element');
+                                    },false);
+                                },false);
+                                </p>
+                            </li>
+                        </ul>
+                        <h3 class="contentWrapper__heading3"> Use of technologies which I am still learning on:</h3>
+                        <ul class="contentWrapper__incompleteSkills">
+                            <li class="contentWrapper__incompleteSkills__item">
+                                <img class="contentWrapper__incompleteSkills__item__photo" src="images/react.png" alt="React JS" >
+                                <p class="contentWrapper__incompleteSkills__item__back">import React from 'react';
+                                    import ReactDOM from 'react-dom';
+                                    import App from './App';
+                                    import registerServiceWorker from './registerServiceWorker';
+                                    import './index.css';
+
+                                    var element = React.createElement('h1', { className: 'greeting' }, 'Hello, world!');
+                                    ReactDOM.render(element, document.getElementById('root'));
+                                    registerServiceWorker();
+                                </p>
+                            </li>
+                            <li class="contentWrapper__incompleteSkills__item">
+                                <img class="contentWrapper__incompleteSkills__item__photo" src="images/nodejs.png" alt="NodeJS">
+                                <p class="contentWrapper__incompleteSkills__item__back">
+                                    var express = require('express');
+                                    var app = express();
+
+                                    app.get('/', function (req, res) {
+                                    res.send('Hello World!');
+                                    });
+
+                                    app.listen(3000, function () {
+                                    console.log('Example app listening on port 3000!');
+                                    });
+                                </p>
+                            </li>
+                            <li class="contentWrapper__incompleteSkills__item">
+                                <img class="contentWrapper__incompleteSkills__item__photo" src="images/angularjs.png" alt="angularjs">
+                                <p class="contentWrapper__incompleteSkills__item__back">
+                                    import { Component } from '@angular/core';
+                                    @Component ({
+                                    selector: 'my-app',
+                                    template: `&lt;h1&gt;Hello {{name}}&lt;/h1&gt;`,
+                                    })
+                                    export class AppComponent  { name = 'World'; }
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <section id="portfolio" class="contentWrapper">
+                <div class="wrapper content">
+                    <header class="contentWrapper__heading">
+                        <h2 class="contentWrapper__heading_type2">My projects</h2>
+                    </header>
+                    <ul class="contentWrapper__projects">
+                        <li class="contentWrapper__projects__item">
+                            <a class="contentWrapper__projects__item__link" href="https://pwiniarski1991.github.io/Newsletter">
+                                <img class="contentWrapper__projects__item__link__photo" src="images/newsletter.jpg" alt="Newsletter form">
+                                <div class="contentWrapper__projects__item__link__overlayInfo">
+                                    <p class="contentWrapper__projects__item__link__overlayInfo__desc">This is Newsletter was made with just HTML and CSS.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="contentWrapper__projects__item">
+                            <a class="contentWrapper__projects__item__link" href="https://pwiniarski1991.github.io/DonateApp">
+                                <img class="contentWrapper__projects__item__link__photo" src="images/donate.jpg" alt="Donate app">
+                                <div class="contentWrapper__projects__item__link__overlayInfo">
+                                    <p class="contentWrapper__projects__item__link__overlayInfo__desc">This Donate website was made with HTML and CSS and JS.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="contentWrapper__projects__item">
+                            <a class="contentWrapper__projects__item__link" href="https://pwiniarski1991.github.io/Mogo">
+                                <img class="contentWrapper__projects__item__link__photo" src="images/mogo.jpg" alt="Mogo One Page Template">
+                                <div class="contentWrapper__projects__item__link__overlayInfo">
+                                    <p class="contentWrapper__projects__item__link__overlayInfo__desc">This is one webapge template with few javaScript components like accordion, etc.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="contentWrapper__projects__item">
+                            <a class="contentWrapper__projects__item__link" href="https://pwiniarski1991.github.io/ToDoList">
+                                <img class="contentWrapper__projects__item__link__photo" src="images/todoapp.jpg" alt="ToDo List app">
+                                <div class="contentWrapper__projects__item__link__overlayInfo">
+                                    <p class="contentWrapper__projects__item__link__overlayInfo__desc">This is basic first javaScript component made by everyone known as Todo List. It was enchanced with drag and drop functionlities.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="hireMe" class="contentWrapper">
+                <div class="wrapper content">
+                    <header class="contentWrapper__heading">
+                        <h2 class="contentWrapper__heading_type2">Hire me</h2>
+                    </header>
+                    <article class="contentWrapper__bio">
+                        <p class="contentWrapper__heading__bio__desc">
+                            Wish to have a great website ?, HTML, CSS, javaScript that all I need to set up to meet your expectations. However I am not stopping there, I am using task runners, bundle automates to make my work easy and pleasant which short expectated time for your website/project to be delivered.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section id="contact" class="contentWrapper">
+                <div class="wrapper content">
+                    <header class="contentWrapper__heading">
+                        <h2 class="contentWrapper__heading_type2">Contact me</h2>
+                    </header>
+                    <form class="contenWrapper__form" method="POST">
+                        <div class="contentWrapper__form__groupblock">
+                            <label class="contentWrapper__form__groupblock__name" for="">Full name:</label>
+                            <input class="contentWrapper__form__groupblock__field" name="fullname">
+                        </div>
+                        <div class="contentWrapper__form__groupblock">
+                            <label class="contentWrapper__form__groupblock__name" for="">Subject:</label>
+                            <input class="contentWrapper__form__groupblock__field" name="subject">
+                        </div>
+                        <div class="contentWrapper__form__groupblock">
+                            <label class="contentWrapper__form__groupblock__name" for="">Message:</label>
+                            <input class="contentWrapper__form__groupblock__field" name="message">
+                        </div>
+                    </form>
+                <div class="wrapper content">
+            </section>
         </main>
         <footer class="mainFooter">
             <div class="wrapper">
-                <p>COPYRIGHT&2018 Piotr Winiarski</p>
+                <p>@COPYRIGHT 2018 Piotr Winiarski</p>
             </div>
         </footer>
     <script src="main.js"></script>
